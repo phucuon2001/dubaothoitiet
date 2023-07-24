@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nen"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="621dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="353dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtsearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text=""
+                    android:textSize="25dp" />
+
+                <Button
+                    android:id="@+id/btnsearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Search" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên Thành Phố:"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/txtcontry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên Quốc Gia:"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/imgIcon"
+                android:layout_width="match_parent"
+                android:layout_height="231dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtnhietdo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Nhiệt Độ"
+            android:textColor="#F44336"
+            android:textSize="35dp" />
+
+        <TextView
+            android:id="@+id/txttrangthai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Trạng Thái"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:src="@drawable/doam" />
+
+                <TextView
+                    android:id="@+id/txtdoam"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="Độ ẩm"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="136dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:src="@drawable/may" />
+
+                <TextView
+                    android:id="@+id/txtmay"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center"
+                    android:text="Mây"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:src="@drawable/gio" />
+
+                <TextView
+                    android:id="@+id/txtgio"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:text="Gió"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtday"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Ngày Cập Nhập"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btntiep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Các ngày tiếp theo" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="78dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="332dp"
+        android:layout_marginTop="612dp"
+        android:background="?android:attr/actionModeFindDrawable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
